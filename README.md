@@ -6,7 +6,7 @@ Welcome to the GitHub repository for Group 123's Unity bootcamp project at the G
 
 - **Furkan Duyan**  
   *Product Owner, Game Developer*  
-  GitHub: [furkanduyan](https://github.com/guizzan)
+  GitHub: [guizzan](https://github.com/guizzan)
 
 - **Atkan İnan**  
   *Scrum Master, Game Developer*  
@@ -18,7 +18,7 @@ Welcome to the GitHub repository for Group 123's Unity bootcamp project at the G
 
 - **Emirhan Kurşun**  
   *Game Artist*  
-  GitHub: [emirkursun](https://github.com/litfin88)
+  GitHub: [litfin88](https://github.com/litfin88)
 
 ## Project Overview
 
