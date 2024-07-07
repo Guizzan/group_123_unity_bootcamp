@@ -18,8 +18,8 @@
   *Game Artist*  
   GitHub: [litfin88](https://github.com/litfin88)
 
-  - **Barış Kula**
-  - *Game Developer*
+ - **Barış Kula**
+   *Game Developer*
 
 ## Oyun İsmi 
 Space&Hoses
