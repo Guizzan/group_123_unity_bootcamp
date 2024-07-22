@@ -12,7 +12,7 @@
 
 - **Burak Nuri Genç**  
   *Game Developer*  
-  GitHub: [buraknurigenc](https://github.com/buraknurigenc)
+  GitHub: [buraknurigenc](https://github.com/Eledhwen0)
 
 - **Emirhan Kurşun**  
   *Game Artist*  
