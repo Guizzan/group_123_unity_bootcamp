@@ -58,7 +58,6 @@ public class FootIK : MonoBehaviour
 
     void OnAnimatorIK(int layerIndex)
     {
-        print(EnableIK);
         if (animator && EnableIK)
         {
             if (resetFootPosition)
