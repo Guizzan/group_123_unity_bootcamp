@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 262.33694, g: 325.04984, b: 430.2193, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -530,7 +527,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 50
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -557,11 +554,11 @@ Transform:
   m_GameObject: {fileID: 582191006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.057899997, y: 1.6213, z: -6.925}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 8642615866076845517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &582191010
 MonoBehaviour:
@@ -588,6 +585,8 @@ MonoBehaviour:
   stopNaNs: 0
   taaSharpenStrength: 0.5
   TAAQuality: 2
+  taaSharpenMode: 0
+  taaRingingReduction: 0
   taaHistorySharpening: 0.35
   taaAntiFlicker: 0.5
   taaMotionVectorRejection: 0
@@ -638,6 +637,7 @@ MonoBehaviour:
     sssQualityMode: 0
     sssQualityLevel: 0
     sssCustomSampleBudget: 20
+    sssCustomDownsampleSteps: 0
     msaaMode: 9
     materialQuality: 0
   renderingPathCustomFrameSettingsOverrideMask:
@@ -772,51 +772,51 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 70a5b2a0-dcc7-41d6-82dc-f72ea93e1e85
-    m_ActionName: Player/PrimaryButton[/Mouse/leftButton]
+    m_ActionName: 'Player/PrimaryButton[/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 61112b92-2542-41f9-a508-dff366a152db
-    m_ActionName: Player/SecondaryButton[/Mouse/rightButton]
+    m_ActionName: 'Player/SecondaryButton[/Mouse/rightButton]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 76134b5f-006d-43ad-9ab9-2f50a6e0404c
-    m_ActionName: Player/Look[/Mouse/delta]
+    m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: ef623a8a-a741-4cb3-9ab0-865d61f01538
-    m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionName: 'Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 25e277e1-5cf7-421c-82f3-42152632db06
-    m_ActionName: Player/Jump[/Keyboard/space]
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: c71d16e9-198b-4ce8-be36-22d39c11417f
-    m_ActionName: Player/Run[/Keyboard/leftShift]
+    m_ActionName: 'Player/Run[/Keyboard/leftShift]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: e6d70565-70d0-492e-b556-846c1efe1f71
-    m_ActionName: Player/RunToggle[/Keyboard/x]
+    m_ActionName: 'Player/RunToggle[/Keyboard/x]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 7e22c15f-7e3b-4085-8309-1c6d00c153fd
-    m_ActionName: Player/Crouch[/Keyboard/leftCtrl]
+    m_ActionName: 'Player/Crouch[/Keyboard/leftCtrl]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 8cfb1d6b-f5df-4123-80d7-7c10c5d69d9b
-    m_ActionName: Player/CrouchToggle[/Keyboard/c]
+    m_ActionName: 'Player/CrouchToggle[/Keyboard/c]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 75313d06-3164-4552-b2a7-85edc8cbe221
-    m_ActionName: Player/PauseMenu[/Keyboard/escape]
+    m_ActionName: 'Player/PauseMenu[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 1d22c094-288a-4037-83f9-e60b8f92e163
-    m_ActionName: Player/Select[/Keyboard/e]
+    m_ActionName: 'Player/Select[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 431118bf-a9bd-4683-b7b5-de97cd193795
-    m_ActionName: Player/Scroll[/Mouse/scroll]
+    m_ActionName: 'Player/Scroll[/Mouse/scroll]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 5d6cd676-3465-45b2-8c7a-4f48974b50d9
@@ -828,43 +828,43 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: c5194a32-3351-4d11-a04c-8fcbaee26a28
-    m_ActionName: Player/Slot1[/Keyboard/1]
+    m_ActionName: 'Player/Slot1[/Keyboard/1]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 5f3d7307-8ed0-4121-964a-2e9417acdf8f
-    m_ActionName: Player/Slot2[/Keyboard/2]
+    m_ActionName: 'Player/Slot2[/Keyboard/2]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: aebdf112-565a-4449-841a-88458abf68be
-    m_ActionName: Player/Slot3[/Keyboard/3]
+    m_ActionName: 'Player/Slot3[/Keyboard/3]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 233b25e3-4df5-4c9a-9589-fb42875b8aa0
-    m_ActionName: Player/Drop[/Keyboard/q]
+    m_ActionName: 'Player/Drop[/Keyboard/q]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 8daf920b-972c-41ba-9007-c616b267b134
-    m_ActionName: Player/Push To Talk[/Keyboard/v]
+    m_ActionName: 'Player/Push To Talk[/Keyboard/v]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: ee49aa94-3787-4a8f-99b3-1efac34bf5ea
-    m_ActionName: Player/Inventory[/Keyboard/f]
+    m_ActionName: 'Player/Inventory[/Keyboard/f]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 330c6ac3-cd95-43e4-a815-4f35cb7528bc
-    m_ActionName: Player/CameraMode[/Keyboard/v]
+    m_ActionName: 'Player/CameraMode[/Keyboard/v]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 06cdf071-32d6-4f45-b6dd-1d2d00f2b4be
-    m_ActionName: UI/Navigation[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionName: 'UI/Navigation[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 3236e8d4-64c3-448d-bfd9-7b6dc10785fd
-    m_ActionName: UI/Esc[/Keyboard/escape]
+    m_ActionName: 'UI/Esc[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 3e890f13-032f-44e4-8a5a-0280084d9f69
-    m_ActionName: PauseUI/Esc[/Keyboard/escape]
+    m_ActionName: 'PauseUI/Esc[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard And Mouse
   m_DefaultActionMap: Player
@@ -1059,15 +1059,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1358,6 +1360,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 477394001087628195, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1494689612844373911, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
       propertyPath: m_Name
       value: TestDummy
@@ -1406,16 +1412,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.38209993
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1905491
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2793002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9974891
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.043245073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.056031518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0024291866
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 582191009}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1494689612844373911, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 8642615866076845519}
   m_SourcePrefab: {fileID: 100100000, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+--- !u!4 &8642615866076845517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8815830610440437704, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+  m_PrefabInstance: {fileID: 8642615866076845516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8642615866076845518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1494689612844373911, guid: 734534c2e4c4ffb4792dde847c90fa57, type: 3}
+  m_PrefabInstance: {fileID: 8642615866076845516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8642615866076845519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8642615866076845518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c82c6266f60154d9daf82340d6ff4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 582191009}
   - {fileID: 737060690}
   - {fileID: 506296707}
   - {fileID: 8642615866076845516}
